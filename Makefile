@@ -1,3 +1,4 @@
+GO_EASY_ON_ME = 1
 export ARCHS = arm64 armv7 arm64e
 
 include $(THEOS)/makefiles/common.mk
