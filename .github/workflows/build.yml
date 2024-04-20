@@ -42,7 +42,9 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: packages iphoneos-arm64 (rootless)
-          path: packages/*_iphoneos-arm64.deb
+          path: |
+            packages/*_iphoneos-arm64.deb
+            usr/bin/libmryipc.dylib
 
   build-rootful:
     runs-on: macos-11
@@ -79,4 +81,10 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: packages iphoneos-arm (rootful)
-          path: packages/*_iphoneos-arm.deb
+          path: |
+            packages/*_iphoneos-arm.deb
+            usr/bin/libmryipc.dylib
+
+
+
+          
